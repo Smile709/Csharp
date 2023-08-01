@@ -8,5 +8,5 @@ Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 for (int i=number * -1; i<=number; i+=1)
 {
-    Console.Write(i);
+    Console.Write(i+" ");
 }
