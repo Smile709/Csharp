@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Downloads\\Учёба\\С#\\task03\\task03.csproj",
-      "projectName": "task03",
-      "projectPath": "D:\\Downloads\\Учёба\\С#\\task03\\task03.csproj",
+      "projectUniqueName": "D:\\Downloads\\Учёба\\С#\\task02\\task02.csproj",
+      "projectName": "task02",
+      "projectPath": "D:\\Downloads\\Учёба\\С#\\task02\\task02.csproj",
       "packagesPath": "C:\\Users\\smile\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\Учёба\\С#\\task03\\obj\\",
+      "outputPath": "D:\\Downloads\\Учёба\\С#\\task02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\smile\\AppData\\Roaming\\NuGet\\NuGet.Config"
