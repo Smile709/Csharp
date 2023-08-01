@@ -1,0 +1,15 @@
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.csproj.AssemblyReference.cache
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.AssemblyInfoInputs.cache
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.AssemblyInfo.cs
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.csproj.CoreCompileInputs.cache
+D:\Downloads\Учёба\С#\task01\bin\Debug\net7.0\task01.exe
+D:\Downloads\Учёба\С#\task01\bin\Debug\net7.0\task01.deps.json
+D:\Downloads\Учёба\С#\task01\bin\Debug\net7.0\task01.runtimeconfig.json
+D:\Downloads\Учёба\С#\task01\bin\Debug\net7.0\task01.dll
+D:\Downloads\Учёба\С#\task01\bin\Debug\net7.0\task01.pdb
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.dll
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\refint\task01.dll
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.pdb
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\task01.genruntimeconfig.cache
+D:\Downloads\Учёба\С#\task01\obj\Debug\net7.0\ref\task01.dll
