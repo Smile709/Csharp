@@ -12,10 +12,10 @@ Console.WriteLine(number);
 int numberOne = number / 10;
 Console.WriteLine(numberOne);
 
-int numberTwo = number%10;
+int numberTwo = number % 10;
 Console.WriteLine(numberTwo);
 
-if(numberOne>numberTwo)
-Console.WriteLine($"Наибольшая цифра числа {number} - {numberOne}");
+if (numberOne > numberTwo)
+    Console.WriteLine($"Наибольшая цифра числа {number} - {numberOne}");
 else
-Console.WriteLine($"Наибольшая цифра числа {number} - {numberTwo}");
+    Console.WriteLine($"Наибольшая цифра числа {number} - {numberTwo}");
