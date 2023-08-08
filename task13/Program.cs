@@ -6,7 +6,9 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (-number <= 99 ||number >=99)
+if (number<99)
+number=number*-1;
+if (number >=99)
 {
     while (number >= 1000)
     {
