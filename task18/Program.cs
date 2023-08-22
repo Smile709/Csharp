@@ -7,17 +7,14 @@ int numberCh = Convert.ToInt32(Console.ReadLine());
 if (numberCh == 1)
 {
     Console.WriteLine("Все X > 0, все Y > 0");
-
 }
 else if (numberCh == 2)
 {
     Console.WriteLine("Все X < 0, все Y > 0");
-
 }
 else if (numberCh == 3)
 {
     Console.WriteLine("Все X < 0, все Y < 0");
-
 }
 else if (numberCh == 4)
 {
