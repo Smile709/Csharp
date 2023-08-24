@@ -11,5 +11,4 @@ for (int i=1;i<=number;i++)
   int result = i * i;
   Console.WriteLine(result);
 }
-/* Mathpow
-*/
+
