@@ -6,10 +6,14 @@
 System.Console.WriteLine("Введите число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
 
-int sum = 0;
-for (int i = 1; i <= userNumber; i++)
+int SumOfNumber (int number)
+{
+    int sum = 0;
+    for (int i = 1; i <= userNumber; i++)
 {
     sum += i;
 }
+    return sum;
+}
 
-System.Console.WriteLine(sum);
+Console.WriteLine($"Сумма цыфр в числе {userNumber} равна {SumOfNumber(userNumber)}");
