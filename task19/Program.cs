@@ -8,6 +8,7 @@ Console.WriteLine("Введите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int usernumber = number;
 int reversenumber = 0;
+if (number < 0) number = number * -1;
 if (number > 9999 && number < 100000)
 {
     while (number > 0)
