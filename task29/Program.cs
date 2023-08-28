@@ -5,6 +5,8 @@
 
 System.Console.WriteLine("Введите количество элементов массива: ");
 int arrayLength = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите минимальное число которое может быть в массиве: ");
+int minNumberArray = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите максимальное число которое может быть в массиве: ");
 int maxNumberArray = Convert.ToInt32(Console.ReadLine());
 int[] GetRandomArray()
@@ -25,7 +27,7 @@ void PrintArray(int[] arrayToPrint)
     System.Console.Write("[");
     for (int i = 0; i < arrayToPrint.Length; i++)
     {
-        System.Console.Write($"{arrayToPrint[i]} ");
+        System.Console.Write($"{arrayToPrint[i]}, ");
     }
     System.Console.WriteLine("]");
 }
