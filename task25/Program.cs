@@ -7,7 +7,7 @@ System.Console.WriteLine("Введите число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите степень: ");
 int userExp = Convert.ToInt32(Console.ReadLine());
-
+/* To do проверить userExp на отрицательность*/
 int Exponentiation (int number)
 {
     int exp = 1;

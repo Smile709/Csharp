@@ -9,18 +9,18 @@ System.Console.WriteLine("Введите минимальное число ко�
 int minNumberArray = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите максимальное число которое может быть в массиве: ");
 int maxNumberArray = Convert.ToInt32(Console.ReadLine());
-int[] GetRandomArray()
+int[] GetRandomArray(int arrLength, int minNumArray, int maxNumArray)
 {
-    int[] array = new int[arrayLength];
+    int[] array = new int[arrLength];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(0,maxNumberArray);
-        
+        array[i] = new Random().Next(minNumArray, maxNumArray);
+
     }
     return array;
 }
 
-int[] userArray = GetRandomArray();
+int[] userArray = GetRandomArray(arrayLength, minNumberArray, maxNumberArray);
 
 void PrintArray(int[] arrayToPrint)
 {
