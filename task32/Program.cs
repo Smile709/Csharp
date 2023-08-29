@@ -29,8 +29,14 @@ void PrintArray(int[] arrayToPrint)
     }
     Console.Write("]");
 }
+System.Console.WriteLine("Введите число: ");
+int arrayL = Convert.ToInt32(Console.ReadLine());
+int min = Convert.ToInt32(Console.ReadLine());
+int max = Convert.ToInt32(Console.ReadLine());
 
-/*
+int[] userArray = GetRandomArray(arrayL, min, max);
+PrintArray(userArray);
+
 int[] ChangeSignArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -42,4 +48,3 @@ int[] ChangeSignArray(int[] array)
 }
 System.Console.WriteLine();
 PrintArray(ChangeSignArray(userArray));
-*/
