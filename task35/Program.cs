@@ -42,12 +42,10 @@ int QuantityNumber(int[] array)
     return count;
 }
 
-
 System.Console.WriteLine("Введи число: ");
 int arrayL = Convert.ToInt32(Console.ReadLine());
 int min = Convert.ToInt32(Console.ReadLine());
 int max = Convert.ToInt32(Console.ReadLine());
-
 
 int[] userArray = GetRandomArray(arrayL, min, max);
 PrintArray(userArray);
