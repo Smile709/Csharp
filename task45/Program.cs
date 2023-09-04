@@ -44,5 +44,8 @@ int[] CopyArray(int[] array)
 
 int[] array = GetRandomArray(arrayL, min, max);
 int[] userArray = CopyArray(array);
+Console.ForegroundColor = ConsoleColor.Red;
 PrintArray(array);
+Console.ForegroundColor = ConsoleColor.Green;
 PrintArray(userArray);
+Console.ForegroundColor = ConsoleColor.White;
