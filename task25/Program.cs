@@ -7,7 +7,12 @@ System.Console.WriteLine("Введите число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите степень: ");
 int userExp = Convert.ToInt32(Console.ReadLine());
-
+if (userExp<=0)
+{
+    Console.WriteLine("Степень отрицательна");
+}
+else
+{
 int Exponentiation (int number)
 {
     int exp = 1;
@@ -19,3 +24,4 @@ int Exponentiation (int number)
 }
 
 Console.WriteLine($"Число {userNumber} в степени {userExp} равно {Exponentiation(userNumber)}");
+}
