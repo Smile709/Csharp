@@ -58,3 +58,4 @@ Console.WriteLine();
 int[] turnArray = TurnArray(userArray);
 Console.ForegroundColor = ConsoleColor.Red;
 PrintArray(turnArray);
+Console.ForegroundColor = ConsoleColor.White;
