@@ -51,6 +51,7 @@ int SumDiaganalArray(int[,] array)
     return result;
 }
 
-int[,] randomArray = GetRandom2DArray(5, 5, 0, 10);
+int[,] randomArray = GetRandom2DArray(10, 3, 0, 10);
 Print2DArray(randomArray);
+System.Console.WriteLine();
 System.Console.WriteLine(SumDiaganalArray(randomArray));
