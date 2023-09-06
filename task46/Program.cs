@@ -33,5 +33,6 @@ void Print2DArray(int[,] arrayToPrint)
         System.Console.WriteLine();
     }
 }
+
 int[,] randomArray = GetRandom2DArray(5, 5, 10);
 Print2DArray(randomArray);
