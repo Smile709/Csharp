@@ -7,7 +7,7 @@
 
 
 Console.Clear();
-
+/*
 System.Console.WriteLine("Введи кол-во строк массива: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введи кол-во столбцов массива: ");
@@ -85,7 +85,8 @@ Print2DArray(arr);
 System.Console.WriteLine();
 int[,] arr2 = DelCross(arr);
 Print2DArray(arr2);
-/*
+*/
+
 Console.Write("Введите количество строк массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
@@ -175,4 +176,3 @@ int[,] RemoveCross(int[,] matrix, int[] pos)
     }
     return result;
 }
-*/
