@@ -64,7 +64,7 @@ int[,] SortRowsDecrease(int[,] array)
             int temp = 0;
             for (int k = cols - 1; k > j; k--)
             {
-                if (array[i, k] < array[i, k - 1])
+                if (array[i, k] > array[i, k - 1])
                 {
                     temp = array[i, k - 1];
                     array[i, k - 1] = array[i, k];
