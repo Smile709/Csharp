@@ -20,6 +20,7 @@
 
 
 Console.Clear();
+//Первый вар не завершен
 /*
 System.Console.WriteLine("Введи кол-во строк массива: ");
 int rows = Convert.ToInt32(Console.ReadLine());
@@ -90,50 +91,14 @@ void [] UniqNumbers(int[,] array)
         }
     }
 }
-*/
-/*
+
 int[,] arr = GetRandom2DArray(rows,columns,minNum,maxNum);
 Print2DArray(arr);
 System.Console.WriteLine();
 Print2DArray(ChangeStringAndColumns(arr));
 */
-/*
-// Разворот матрицы в одномерный массив
-int[] ExpandMatrix(int[,] matrix)
-{
-    int n = matrix.GetLength(0) * matrix.GetLength(1);
-    int[] array = new int[n];
-    n = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            array[n] = matrix[i, j];
-            n++;
-        }
-    }
-    return array;
-}
+//Второй вар 
 
-// Сортировка элементов по возрастанию
-void CollectionSort(int[] array)
-{
-    for (int i = 0; i < array.Length - 1; i++)
-    {
-        int minPosition = i;
-        for (int j = i + 1; j < array.Length; j++)
-        {
-            if (array[j] < array[minPosition]) minPosition = j;
-        }
-        if (i != minPosition)
-        {
-            int tmp = array[i];
-            array[i] = array[minPosition];
-            array[minPosition] = tmp;
-        }
-    }
-}
-*/
 
 Console.Write("Введите количество строк массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
@@ -233,3 +198,74 @@ void RepeatRate(int[] array)
             Console.WriteLine($"{save} - {count} шт");
     }
 }
+
+
+//Третий вар 
+/*
+int CountUniqElementsInArray(int[] arrayForCountUniqElements)
+{
+    int uniqueCount = 0;
+    bool[] counted = new bool[arrayForCountUniqElements.Length];
+
+    for (int i = 0; i < arrayForCountUniqElements.Length; i++)
+    {
+        if (!counted[i])
+        {
+            uniqueCount++;
+
+            for (int j = i + 1; j < arrayForCountUniqElements.Length; j++)
+            {
+                if (arrayForCountUniqElements[i] == arrayForCountUniqElements[j])
+                {
+                    counted[j] = true;
+                }
+            }
+        }
+    }
+
+    return uniqueCount;
+}
+int[] FillArrayOnlyUniqElements(int[] array)
+{
+    int[] uniqArray = new int[CountUniqElementsInArray(userArray)];
+    int uniqueCount = 0;  // капец сложный момент с uniqueCount 
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        bool isUnique = true;
+
+        // Проверяем, является ли элемент уникальным в массиве
+        for (int j = 0; j < uniqueCount; j++) // чтобы 0 не переносился в конец массива также используем uniqueCount
+        {
+            if (array[i] == uniqArray[j])
+            {
+                isUnique = false;
+                break;
+            }
+        }
+
+        // Если элемент уникальный, добавляем его в новый массив
+        if (isUnique)
+        {
+            uniqArray[uniqueCount] = array[i];
+            uniqueCount++;
+        }
+    }
+
+    return uniqArray;
+}
+void PrintFrequencyVocabulary(int[] arrayForCountNumber, int[] uniqueArray)
+{
+    for (int i = 0; i < uniqueArray.Length; i++)
+    {
+        int element = uniqueArray[i];
+        int countElement = 0;
+        for (int j = 0; j < arrayForCountNumber.Length; j++)
+        {
+            if (element == arrayForCountNumber[j]) countElement++;
+        }
+
+        Console.WriteLine($"{element} встречается {countElement} раз");
+    }
+}
+*/
