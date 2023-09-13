@@ -6,10 +6,65 @@
 10 09 08 07
 */
 
-/* 
-
 Console.Clear();
 
+int[,] GetSpiral(int size)
+{
+    int[,] result = new int[size,size];
+    int count = 1;
+    int var = size;
+    int k = (var+1)/2;
+    while (k > 0)
+    {
+        for (int i = size - var; i < var; i++)
+        {
+            result[size - var,i] = count;
+            count++;
+        }
+        for (int j = size - var + 1; j < var; j++)
+        {
+            result[j,var -1] = count;
+            count++;
+        }
+        for (int i = var - 2; i >= size - var; i= i -1)
+        {
+            result[var -1,i] = count;
+            count++;
+        }
+        for (int j = var - 2; j >= size - var +1; j = j-1)
+        {
+            result[j,size-var] = count;
+            count++;
+        }
+        k -= 1;
+        var -= 1;
+    }
+    return result;
+}
+
+void Print2DArray(int[,] arrayToPrint)
+{
+    System.Console.Write($"[ ]\t");
+    for (int i = 0; i < arrayToPrint.GetLength(1); i++)
+    {
+        Console.Write($"[{i}] \t");
+    }
+    System.Console.WriteLine();
+    for (int i = 0; i < arrayToPrint.GetLength(0); i++)
+    {
+        Console.Write($"[{i}] \t");
+        for (int j = 0; j < arrayToPrint.GetLength(1); j++)
+        {
+            Console.Write($"{arrayToPrint[i, j]}\t");
+        }
+        Console.WriteLine();
+    }
+}
+
+int[,] userArray = GetSpiral(4);
+Print2DArray(userArray);
+
+/* // Красивая программа от Василия
 System.Console.Write("Высота массива:");
 int rows = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Ширина массива:");
